@@ -1,0 +1,113 @@
+@import './variables.scss';
+
+.weather {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  .input-place {
+    display: flex;
+    justify-content: center;
+
+    .input-city {
+      padding: .05rem 1rem;
+      font-family: inherit;
+      border: 1px solid $black;
+      border-radius: 10px 0 0 10px;
+      width: 20rem;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .submit-button {
+      background-color: white;
+      padding: 1rem 1rem;
+      border: 1px solid $black;
+      border-left: none;
+      cursor: pointer;
+      border-radius: 0 10px 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .location {
+  
+      .city {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+  
+        & h3 {
+          font-weight: 600;
+        }
+      }
+  
+      & h1 {
+        font-size: 4rem;
+        // line-height: 3rem;
+      }
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .texts {
+        text-align: right;
+
+        & h4 {
+          font-size: 1.5rem;
+        }
+
+        .temp {
+          display: flex;
+          justify-content: flex-end;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+
+
+  .other-info {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .info {
+
+      & h2 {
+        font-size: 2rem;
+
+        & small {
+          font-size: 1.25rem;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        & h3 {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
